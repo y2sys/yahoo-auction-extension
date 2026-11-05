@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ヤフオク 商品非表示",
+  "version": "1.0.0",
+  "description": "ヤフーオークションの検索結果から指定した商品を非表示にします。リスト・グリッド表示に対応。",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "非表示にした商品", "default_popup": "popup.html" },
+  "options_page": "options.html",
+  "content_scripts": [{
+    "matches": ["https://auctions.yahoo.co.jp/*"],
+    "js": ["common.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

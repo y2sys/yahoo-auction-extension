@@ -1,0 +1,25 @@
+.yah-card { position: relative !important; padding-top: 30px !important; }
+.yah-card.yah-hidden { display: none !important; }
+.yah-hide-button {
+  position: absolute !important; top: 3px !important; right: 5px !important; z-index: 3 !important;
+  appearance: none !important; border: 1px solid #b8c3ce !important; border-radius: 5px !important;
+  padding: 3px 9px !important; margin: 0 !important; background: #fff !important; color: #334155 !important;
+  font: 12px/1.5 system-ui, sans-serif !important; cursor: pointer !important;
+}
+.yah-hide-button:hover { background: #eef2f6 !important; border-color: #64748b !important; }
+.yah-hide-button:focus-visible, .yah-bar button:focus-visible, .yah-toast button:focus-visible { outline: 3px solid #2563eb !important; outline-offset: 2px !important; }
+.yah-hide-button:disabled { opacity: .5 !important; cursor: wait !important; }
+.yah-bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px;
+  background: #f0f6ff; color: #334155; border: 1px solid #dbe6f5; border-radius: 6px;
+  margin: 10px 0; padding: 10px 12px; font: 13px/1.6 system-ui, sans-serif;
+}
+.yah-bar button { appearance: none; background: white; border: 1px solid #b7c9e0; border-radius: 5px; padding: 4px 10px; color: #1d4ed8; font: inherit; cursor: pointer; }
+.yah-toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 2147483647;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 12px; width: max-content;
+  max-width: calc(100vw - 32px); box-sizing: border-box; padding: 14px 18px;
+  border-radius: 10px; background: #17263b; color: white; box-shadow: 0 4px 24px #0003;
+  font: 14px/1.6 system-ui, sans-serif;
+}
+.yah-toast button { appearance: none; border: 1px solid #93b5e4; padding: 4px 10px; border-radius: 5px; background: #fff; color: #183b68; font: inherit; cursor: pointer; }

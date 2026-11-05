@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>非表示にした商品</title><link rel="stylesheet" href="manager.css"></head>
+<body class="popup">
+  <main>
+    <header><p class="eyebrow">ヤフオク 商品非表示</p><h1>非表示にした商品</h1></header>
+    <button id="open-options" type="button">管理画面を開く</button>
+    <label for="filter">商品名・オークションIDで絞り込み</label>
+    <input id="filter" type="search" placeholder="商品名またはIDを入力" autocomplete="off">
+    <p id="count" role="status">読み込み中…</p><p id="message" role="status"></p>
+    <div id="items"></div>
+    <footer>検索結果の「非表示」ボタンから登録できます。</footer>
+  </main>
+  <script src="common.js"></script><script src="manager.js"></script>
+</body></html>
